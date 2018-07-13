@@ -12,6 +12,10 @@ var webpackConfig = require('./webpack.dev.conf')
 var port = process.env.PORT || config.dev.port
     // Define HTTP proxies to your custom API backend
     // https://github.com/chimurai/http-proxy-middleware
+function cl(i){
+    console.log(i)
+}
+
 
 var server = express()
 var compiler = webpack(webpackConfig)
